@@ -51,7 +51,7 @@ def day_string_to_number(string):
         raise ValueError('Not a day')
 
 #user prompt to display the first five rows of the dataframe
-def raw_data(df):
+def display_data(df):
     see_data = ''
     n = 0
     m = 5
@@ -255,7 +255,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        raw_data(df)
+        display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
