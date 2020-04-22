@@ -178,7 +178,7 @@ def station_stats(df):
     df['Station Combination'] = df['Start Station'] + ' >>> ' + df['End Station']
     start_end_counter = co.Counter(df['Station Combination'])
     most_common_start_end = start_end_counter.most_common(1)
-    print('most common start/end combination with number of occurences: ')
+    print('most common start>>end combination with number of occurences: ')
     print(most_common_start_end)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
